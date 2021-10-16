@@ -3,6 +3,7 @@ import requests
 if __name__ == "__main__":
 
     # individual datacake webhook url
+    # Change this to the webhook url of your datacake device/product
     datacake_url = "https://api.datacake.co/integrations/api/ae6dd531-4cf6-4966-b5c9-6c43939aae90/"
 
     # Just some random demo data
