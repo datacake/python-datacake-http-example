@@ -3,6 +3,13 @@ function Decoder(request) {
     // hardcoded serial
     var serial = "9c26490c-8cb0-4ab0-a27f-989ffc1f4339";
 
+    /* extract Serial from Payload / request.body (if included)
+    you can set individual serial numbers on your datacake devices
+    routing is done based on this serial
+    you can use same Webhook URL for multiple devices */
+
+    // serial = payload.serial
+
     // extract payload from request.body and parse as json
     var payload = JSON.parse(request.body)
 
